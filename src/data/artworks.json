@@ -1,0 +1,122 @@
+[
+  {
+    "id": "bf-twin-prongs",
+    "title": "Untitled (Twin Prongs)",
+    "artistId": "bella-feldman",
+    "year": null,
+    "medium": "Forged steel",
+    "dimensions": "",
+    "price": null,
+    "description": "Two elongated tapered prongs rise from a curved steel base, their sweeping lines suggesting both organic growth and industrial precision.",
+    "image": "/artworks/bella-feldman-IMG_2454.JPG",
+    "category": "Sculpture"
+  },
+  {
+    "id": "bf-vessel",
+    "title": "Untitled (Vessel)",
+    "artistId": "bella-feldman",
+    "year": null,
+    "medium": "Forged bronze",
+    "dimensions": "",
+    "price": null,
+    "description": "A round bronze vessel form with serrated edges and a pointed finial, its patinated surface catching warm light through a central vertical opening.",
+    "image": "/artworks/bella-feldman-IMG_2455.JPG",
+    "category": "Sculpture"
+  },
+  {
+    "id": "bf-glass-and-claw",
+    "title": "Untitled (Glass and Claw)",
+    "artistId": "bella-feldman",
+    "year": null,
+    "medium": "Forged steel and blown glass",
+    "dimensions": "",
+    "price": null,
+    "description": "A blown glass orb is cradled by angular steel claws on a dark base, the transparency of glass in tension with the weight of forged metal.",
+    "image": "/artworks/bella-feldman-IMG_2456.JPG",
+    "category": "Sculpture"
+  },
+  {
+    "id": "bf-diamond-plate",
+    "title": "Untitled (Diamond Plate)",
+    "artistId": "bella-feldman",
+    "year": null,
+    "medium": "Steel and found objects",
+    "dimensions": "",
+    "price": null,
+    "description": "A triangular floor sculpture built from industrial diamond plate steel with serrated edges and an iron wheel, evoking machinery and forward motion.",
+    "image": "/artworks/bella-feldman-IMG_2457.JPG",
+    "category": "Sculpture"
+  },
+  {
+    "id": "bf-cable-burst",
+    "title": "Untitled (Cable Burst)",
+    "artistId": "bella-feldman",
+    "year": null,
+    "medium": "Steel and braided cable",
+    "dimensions": "",
+    "price": null,
+    "description": "Thick braided steel cables cascade from a dark disc, their twisted strands frozen in mid-flow like a mechanical cascade.",
+    "image": "/artworks/bella-feldman-IMG_2458.JPG",
+    "category": "Sculpture"
+  },
+  {
+    "id": "bf-lattice-tower",
+    "title": "Untitled (Lattice Tower)",
+    "artistId": "bella-feldman",
+    "year": null,
+    "medium": "Welded steel",
+    "dimensions": "",
+    "price": null,
+    "description": "A tall, narrow lattice structure in welded steel, its ladder-like framework tapering to a waist before expanding again — an architectural form in miniature.",
+    "image": "/artworks/bella-feldman-IMG_2459.JPG",
+    "category": "Sculpture"
+  },
+  {
+    "id": "bf-lantern-clear",
+    "title": "Untitled (Lantern I)",
+    "artistId": "bella-feldman",
+    "year": null,
+    "medium": "Forged steel and blown glass",
+    "dimensions": "",
+    "price": null,
+    "description": "A wall-mounted work where a clear blown glass form is held within a steel armature, evoking an ancient lantern reimagined in sculptural terms.",
+    "image": "/artworks/bella-feldman-IMG_2460.JPG",
+    "category": "Sculpture"
+  },
+  {
+    "id": "bf-lantern-dark",
+    "title": "Untitled (Lantern II)",
+    "artistId": "bella-feldman",
+    "year": null,
+    "medium": "Steel, woven wire, and glass",
+    "dimensions": "",
+    "price": null,
+    "description": "A dark, rounded glass form wrapped in a band of woven wire, suspended from a steel handle — mysterious and contained.",
+    "image": "/artworks/bella-feldman-IMG_2461.JPG",
+    "category": "Sculpture"
+  },
+  {
+    "id": "bf-lantern-rings",
+    "title": "Untitled (Lantern III)",
+    "artistId": "bella-feldman",
+    "year": null,
+    "medium": "Forged steel, wire mesh, and frosted glass",
+    "dimensions": "",
+    "price": null,
+    "description": "Two interlocking steel rings frame a frosted glass element wrapped in wire mesh, creating a sculptural object of elegant geometric balance.",
+    "image": "/artworks/bella-feldman-IMG_2462.JPG",
+    "category": "Sculpture"
+  },
+  {
+    "id": "bf-wall-triptych",
+    "title": "Wall Triptych (Installation View)",
+    "artistId": "bella-feldman",
+    "year": null,
+    "medium": "Forged steel, blown glass, wire mesh",
+    "dimensions": "",
+    "price": null,
+    "description": "Three wall-mounted lantern forms displayed together, each combining steel and glass in a distinct variation on the theme of containment and light.",
+    "image": "/artworks/bella-feldman-IMG_2463.JPG",
+    "category": "Sculpture"
+  }
+]

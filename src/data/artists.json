@@ -1,0 +1,59 @@
+[
+  {
+    "id": "bella-feldman",
+    "name": "Bella Feldman",
+    "years": "1930 – 2024",
+    "bio": "Bella Tabak Feldman was an American sculptor whose six-decade career was defined by an unflinching exploration of war, sexuality, and the anxieties of the industrial age, rendered in forged steel and blown glass.",
+    "portrait": "/artworks/bella-feldman-portrait.png",
+    "website": "",
+    "profile": {
+      "sections": [
+        {
+          "heading": "Early Life & Education",
+          "text": "Born Bella R. Tabak in 1930 in New York City, Feldman grew up in Bronx tenements as the daughter of working-class Polish-Jewish immigrants. She attended the High School of Music & Art in Manhattan during World War II.\n\nA pivotal early experience came at age thirteen when she visited the Museum of Modern Art and encountered Meret Oppenheim's Object — a moment she credited with awakening her to the psychological power of sculpture. The Holocaust, in which she lost numerous family members who had remained in Poland, profoundly shaped her lifelong artistic preoccupation with war and the military-industrial complex.\n\nFeldman earned a BA from Queens College, City University of New York, and later an MA in sculpture from San Jose State University (1973), where she studied with Sam Richardson, John Battenberg, and Fletcher Benton."
+        },
+        {
+          "heading": "Career & Teaching",
+          "text": "Feldman married Leonard Feldman at age eighteen and moved to California in 1951. In 1965, she joined the faculty at the California College of the Arts (CCA), where she taught for over three decades, chaired the Sculpture Department, and eventually became Professor Emeritus.\n\nShe also founded the Sculpture Program at Santa Rosa Junior College (1975–1979) and, from 1972 to 1975, taught art at Makerere University in Uganda on a Harvard-sponsored grant. Upon returning from Uganda, she faced gender discrimination at CCA and became a vocal advocate for women faculty members' rights."
+        },
+        {
+          "heading": "Artistic Philosophy",
+          "text": "Feldman's sculpture investigated structure, decay, and renewal through discarded and industrial materials. Her work drew affinities with Surrealism, Post-Minimalism, and Feminist art.\n\nIn the late 1990s, she pioneered the technique of blowing glass directly into forged metal forms, creating a charged dialogue between fragile and formidable elements. Notable bodies of work include Metamorphosis (1970s), War Toys (1992), Flasks of Fiction (1998–2001) — her first series using blown glass within metal armatures, originally inspired by lanterns in mosques she visited in Turkey — and War Toys Redux (2003)."
+        },
+        {
+          "heading": "Selected Exhibitions",
+          "items": [
+            "Oakland Museum Sculpture Court — solo exhibition",
+            "San Jose Museum of Art — solo exhibition",
+            "Fresno Art Museum — solo exhibition",
+            "Downey Museum — solo exhibition",
+            "Musée des Beaux Arts, Lausanne, Switzerland",
+            "Alternative Museum, New York",
+            "Contemporary Jewish Museum, San Francisco",
+            "Whitney Biennial Peace Tower (2006)",
+            "Richmond Art Center — fifty-year retrospective (2013)"
+          ]
+        },
+        {
+          "heading": "Awards & Recognition",
+          "items": [
+            "National Endowment for the Arts Individual Artists Award (1986)",
+            "Kala Art Institute Distinguished Artist Award, Berkeley, CA (2004)",
+            "Women's Caucus for Art Distinguished Artist Award (2005)"
+          ]
+        },
+        {
+          "heading": "Collections",
+          "items": [
+            "Fine Arts Museums of San Francisco (de Young Museum)",
+            "Oakland Museum of California",
+            "University Art Museum, UC Berkeley",
+            "di Rosa Preserve, Napa, CA",
+            "Fresno Art Museum",
+            "Palm Springs Desert Museum"
+          ]
+        }
+      ]
+    }
+  }
+]
