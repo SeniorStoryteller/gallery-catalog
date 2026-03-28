@@ -31,6 +31,11 @@ export default function ArtistDetail() {
         <div>
           <h1>{artist.name}</h1>
           <p className="artist-detail__bio">{artist.bio}</p>
+          {artist.profile && (
+            <Link to={`/artists/${artist.id}/profile`} className="artist-detail__profile-link">
+              Full Profile →
+            </Link>
+          )}
         </div>
       </section>
 

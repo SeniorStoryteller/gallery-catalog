@@ -66,7 +66,7 @@ img {
 }
 
 .site-header__inner {
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 24px;
   height: 64px;
@@ -132,7 +132,7 @@ img {
 
 /* Page layout */
 .page {
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 40px 24px 80px;
 }
@@ -461,6 +461,18 @@ img {
   color: var(--text);
   line-height: 1.7;
   margin: 0;
+}
+
+.artist-detail__profile-link {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--muted);
+  transition: color 0.2s;
+}
+
+.artist-detail__profile-link:hover {
+  color: var(--text-h);
 }
 
 .artist-detail h2 {
