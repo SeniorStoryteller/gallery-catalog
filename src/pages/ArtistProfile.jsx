@@ -1,12 +1,13 @@
 import { useParams, Link } from 'react-router-dom';
 import artists from '../data/artists.json';
 
-/** Turn superscript markers like ¹ ² ³ into <sup> elements */
+/** Turn superscript markers like ¹ ² ³ into styled (1) (2) (3) references */
 function renderWithFootnotes(text) {
-  const parts = text.split(/([\u00B9\u00B2\u00B3\u2074\u2075\u2076])/g);
+  const superMap = { '\u00B9': '1', '\u00B2': '2', '\u00B3': '3', '\u2074': '4', '\u2075': '5', '\u2076': '6', '\u2077': '7' };
+  const parts = text.split(/([\u00B9\u00B2\u00B3\u2074\u2075\u2076\u2077])/g);
   return parts.map((part, i) => {
-    if (/^[\u00B9\u00B2\u00B3\u2074\u2075\u2076]$/.test(part)) {
-      return <sup key={i} className="footnote-ref">{part}</sup>;
+    if (superMap[part]) {
+      return <span key={i} className="footnote-ref">({superMap[part]})</span>;
     }
     return part;
   });
