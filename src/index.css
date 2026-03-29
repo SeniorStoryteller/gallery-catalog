@@ -337,12 +337,15 @@ img {
 }
 
 .artwork-card {
-  display: block;
   overflow: hidden;
+}
+
+.artwork-card__link {
+  display: block;
   transition: opacity 0.2s;
 }
 
-.artwork-card:hover {
+.artwork-card__link:hover {
   opacity: 0.85;
 }
 
@@ -363,16 +366,12 @@ img {
   transition: transform 0.4s ease;
 }
 
-.artwork-card:hover .artwork-card__image-wrap img {
+.artwork-card__link:hover .artwork-card__image-wrap img {
   transform: scale(1.02);
 }
 
-.artwork-card__info {
-  padding: 12px 2px;
-}
-
-.artwork-card__info h3 {
-  margin: 0 0 2px;
+.artwork-card__title {
+  margin: 12px 2px 2px;
   font-family: var(--heading);
   font-size: 15px;
   font-weight: 400;
@@ -381,16 +380,24 @@ img {
 }
 
 .artwork-card__artist {
+  display: block;
   font-size: 12px;
   color: var(--muted);
   margin: 0 0 2px;
+  padding: 0 2px;
   letter-spacing: 0.3px;
+  transition: color 0.2s;
+}
+
+.artwork-card__artist:hover {
+  color: var(--text-h);
 }
 
 .artwork-card__meta {
   font-size: 11px;
   color: var(--muted);
   margin: 0;
+  padding: 0 2px;
   letter-spacing: 0.2px;
 }
 
@@ -399,6 +406,7 @@ img {
   font-weight: 500;
   color: var(--text-h);
   margin: 6px 0 0;
+  padding: 0 2px;
 }
 
 /* ── Artwork detail ── */

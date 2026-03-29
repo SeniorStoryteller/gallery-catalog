@@ -28,7 +28,7 @@ export default function ArtworkDetail() {
 
         <div className="artwork-detail__info">
           <h1>{artwork.title}</h1>
-          <Link to={`/artists/${artist?.id}`} className="artwork-detail__artist">
+          <Link to={`/artists/${artist?.id}/profile`} className="artwork-detail__artist">
             {artist?.name}
           </Link>
 
