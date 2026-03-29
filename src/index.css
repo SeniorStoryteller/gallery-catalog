@@ -687,6 +687,17 @@ img {
   letter-spacing: 0.5px;
 }
 
+.artist-profile__quote {
+  font-family: var(--heading);
+  font-size: 15px;
+  font-style: italic;
+  color: var(--muted);
+  margin: 16px 0 0;
+  padding: 0;
+  line-height: 1.6;
+  border: none;
+}
+
 .artist-profile__section {
   margin-bottom: 44px;
   max-width: 680px;
@@ -730,6 +741,42 @@ img {
 
 .artist-profile__cta {
   margin-top: 48px;
+}
+
+.footnote-ref {
+  font-size: 10px;
+  color: var(--muted);
+  margin-left: 1px;
+  vertical-align: super;
+  line-height: 0;
+}
+
+.artist-profile__sources {
+  margin-top: 64px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+  max-width: 680px;
+}
+
+.artist-profile__sources h2 {
+  font-family: var(--heading);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+
+.artist-profile__sources ol {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.artist-profile__sources li {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.8;
+  letter-spacing: 0.2px;
 }
 
 /* ── Footer ── */

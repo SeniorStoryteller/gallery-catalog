@@ -1,6 +1,17 @@
 import { useParams, Link } from 'react-router-dom';
 import artists from '../data/artists.json';
 
+/** Turn superscript markers like ¹ ² ³ into <sup> elements */
+function renderWithFootnotes(text) {
+  const parts = text.split(/([\u00B9\u00B2\u00B3\u2074\u2075\u2076])/g);
+  return parts.map((part, i) => {
+    if (/^[\u00B9\u00B2\u00B3\u2074\u2075\u2076]$/.test(part)) {
+      return <sup key={i} className="footnote-ref">{part}</sup>;
+    }
+    return part;
+  });
+}
+
 export default function ArtistProfile() {
   const { id } = useParams();
   const artist = artists.find((a) => a.id === id);
@@ -13,6 +24,8 @@ export default function ArtistProfile() {
       </main>
     );
   }
+
+  const sources = artist.profile?.sources;
 
   return (
     <main className="page artist-profile">
@@ -31,6 +44,11 @@ export default function ArtistProfile() {
           {artist.years && (
             <p className="artist-profile__years">{artist.years}</p>
           )}
+          {artist.quote && (
+            <blockquote className="artist-profile__quote">
+              &ldquo;{artist.quote}&rdquo;
+            </blockquote>
+          )}
         </div>
       </div>
 
@@ -40,12 +58,12 @@ export default function ArtistProfile() {
           {section.items ? (
             <ul className="artist-profile__list">
               {section.items.map((item, j) => (
-                <li key={j}>{item}</li>
+                <li key={j}>{renderWithFootnotes(item)}</li>
               ))}
             </ul>
           ) : (
             section.text.split('\n\n').map((para, j) => (
-              <p key={j}>{para}</p>
+              <p key={j}>{renderWithFootnotes(para)}</p>
             ))
           )}
         </section>
@@ -56,6 +74,17 @@ export default function ArtistProfile() {
           View Works in Collection
         </Link>
       </div>
+
+      {sources && sources.length > 0 && (
+        <section className="artist-profile__sources">
+          <h2>Sources</h2>
+          <ol>
+            {sources.map((source, i) => (
+              <li key={i}>{source}</li>
+            ))}
+          </ol>
+        </section>
+      )}
     </main>
   );
 }
