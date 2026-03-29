@@ -750,6 +750,12 @@ img {
   vertical-align: super;
   line-height: 0;
   font-style: normal;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a.footnote-ref:hover {
+  color: var(--text-h);
 }
 
 .artist-profile__sources {
@@ -778,6 +784,18 @@ img {
   color: var(--muted);
   line-height: 1.8;
   letter-spacing: 0.2px;
+}
+
+.artist-profile__sources a {
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.artist-profile__sources a:hover {
+  color: var(--text-h);
+  border-bottom-color: var(--text-h);
 }
 
 /* ── Footer ── */

@@ -9,13 +9,13 @@
     "quote": "I produce anxious objects, yet humor laces through my work because, like my ghetto forebears, I need to laugh at the dark.",
     "profile": {
       "sources": [
-        "Wikipedia, \"Bella Feldman,\" en.wikipedia.org/wiki/Bella_Feldman",
-        "Bella Tabak Feldman official website, bellatabakfeldman.com/bio-and-cv",
-        "SculptureSite Gallery, sculpturesite.com/artist/10-bella-feldman",
-        "Bay Area Women Artists' Legacy Project (BAWALP), bawalp.org/bella-feldman",
-        "Richmond Art Center, fifty-year retrospective exhibition catalog (2013)",
-        "Women's Caucus for Art, Distinguished Artist Award citation (2005)",
-        "Desta Gallery, destagallery.com/artist/bella-feldman"
+        { "label": "Wikipedia, \"Bella Feldman\"", "url": "https://en.wikipedia.org/wiki/Bella_Feldman" },
+        { "label": "Bella Tabak Feldman official website", "url": "https://bellatabakfeldman.com/bio-and-cv" },
+        { "label": "SculptureSite Gallery", "url": "https://sculpturesite.com/artist/10-bella-feldman" },
+        { "label": "Bay Area Women Artists' Legacy Project (BAWALP)", "url": "https://bawalp.org/bella-feldman" },
+        { "label": "Richmond Art Center, fifty-year retrospective exhibition catalog (2013)", "url": null },
+        { "label": "Women's Caucus for Art, Distinguished Artist Award citation (2005)", "url": null },
+        { "label": "Desta Gallery", "url": "https://destagallery.com/artist/bella-feldman" }
       ],
       "sections": [
         {

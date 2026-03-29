@@ -1,13 +1,23 @@
 import { useParams, Link } from 'react-router-dom';
 import artists from '../data/artists.json';
 
-/** Turn superscript markers like ¹ ² ³ into styled (1) (2) (3) references */
-function renderWithFootnotes(text) {
-  const superMap = { '\u00B9': '1', '\u00B2': '2', '\u00B3': '3', '\u2074': '4', '\u2075': '5', '\u2076': '6', '\u2077': '7' };
+/** Turn superscript markers like ¹ ² ³ into clickable (1) (2) (3) links */
+function renderWithFootnotes(text, sources) {
+  const superMap = { '\u00B9': 0, '\u00B2': 1, '\u00B3': 2, '\u2074': 3, '\u2075': 4, '\u2076': 5, '\u2077': 6 };
   const parts = text.split(/([\u00B9\u00B2\u00B3\u2074\u2075\u2076\u2077])/g);
   return parts.map((part, i) => {
-    if (superMap[part]) {
-      return <span key={i} className="footnote-ref">({superMap[part]})</span>;
+    if (part in superMap) {
+      const idx = superMap[part];
+      const source = sources?.[idx];
+      const num = idx + 1;
+      if (source?.url) {
+        return (
+          <a key={i} href={source.url} target="_blank" rel="noopener noreferrer" className="footnote-ref">
+            ({num})
+          </a>
+        );
+      }
+      return <span key={i} className="footnote-ref">({num})</span>;
     }
     return part;
   });
@@ -59,12 +69,12 @@ export default function ArtistProfile() {
           {section.items ? (
             <ul className="artist-profile__list">
               {section.items.map((item, j) => (
-                <li key={j}>{renderWithFootnotes(item)}</li>
+                <li key={j}>{renderWithFootnotes(item, sources)}</li>
               ))}
             </ul>
           ) : (
             section.text.split('\n\n').map((para, j) => (
-              <p key={j}>{renderWithFootnotes(para)}</p>
+              <p key={j}>{renderWithFootnotes(para, sources)}</p>
             ))
           )}
         </section>
@@ -81,7 +91,15 @@ export default function ArtistProfile() {
           <h2>Sources</h2>
           <ol>
             {sources.map((source, i) => (
-              <li key={i}>{source}</li>
+              <li key={i}>
+                {source.url ? (
+                  <a href={source.url} target="_blank" rel="noopener noreferrer">
+                    {source.label}
+                  </a>
+                ) : (
+                  source.label
+                )}
+              </li>
             ))}
           </ol>
         </section>
