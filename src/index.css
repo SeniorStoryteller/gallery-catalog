@@ -134,6 +134,144 @@ img {
   }
 }
 
+/* ── Landing hero ── */
+.landing-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 85vh;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  gap: 48px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .landing-hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 32px 16px;
+    gap: 32px;
+  }
+}
+
+.landing-hero__image {
+  display: flex;
+  justify-content: center;
+}
+
+.landing-hero__image img {
+  max-height: 75vh;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+.landing-hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+@media (max-width: 768px) {
+  .landing-hero__text {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.landing-hero__dates {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+
+.landing-hero__text h1 {
+  font-family: var(--heading);
+  font-size: 52px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-h);
+  margin: 0 0 12px;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+@media (max-width: 480px) {
+  .landing-hero__text h1 {
+    font-size: 36px;
+  }
+}
+
+.landing-hero__subtitle {
+  font-size: 16px;
+  color: var(--text);
+  margin: 0 0 32px;
+  line-height: 1.5;
+}
+
+.landing-hero__artists {
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+  margin-bottom: 32px;
+}
+
+.landing-hero__artists span {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--muted);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.landing-hero__artists p {
+  font-size: 14px;
+  color: var(--text);
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+.landing-hero__cta {
+  display: inline-block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-h);
+  border: 1px solid var(--text-h);
+  padding: 14px 32px;
+  border-radius: 2px;
+  transition: all 0.2s;
+  align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+  .landing-hero__cta {
+    align-self: center;
+  }
+}
+
+.landing-hero__cta:hover {
+  background: var(--text-h);
+  color: var(--bg);
+}
+
+/* ── Section heading ── */
+.section-heading {
+  font-family: var(--heading);
+  font-size: 22px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-h);
+  margin: 0 0 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ── Legacy hero (artists page etc.) ── */
 .hero {
   text-align: center;
   margin-bottom: 56px;
@@ -175,39 +313,6 @@ img {
 
 .back-link:hover {
   color: var(--text-h);
-}
-
-/* ── Filters ── */
-.filters {
-  display: flex;
-  gap: 6px;
-  margin-bottom: 32px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.filter-btn {
-  padding: 6px 18px;
-  border: 1px solid var(--border);
-  border-radius: 100px;
-  background: transparent;
-  color: var(--muted);
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.filter-btn:hover {
-  border-color: var(--text);
-  color: var(--text-h);
-}
-
-.filter-btn.active {
-  background: var(--text-h);
-  border-color: var(--text-h);
-  color: var(--bg);
 }
 
 /* ── Artwork grid ── */
