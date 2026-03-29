@@ -1,36 +1,22 @@
 :root {
-  --text: #555;
-  --text-h: #111;
-  --bg: #fafaf8;
-  --surface: #fff;
-  --border: #e5e5e0;
-  --accent: #1a1a1a;
-  --accent-hover: #000;
-  --muted: #999;
-  --card-bg: #f5f4f0;
+  --text: #a0a0a0;
+  --text-h: #e8e8e8;
+  --bg: #0a0a0a;
+  --surface: #141414;
+  --border: #222;
+  --accent: #e0e0e0;
+  --accent-hover: #fff;
+  --muted: #666;
+  --card-bg: #141414;
 
   --sans: 'Helvetica Neue', system-ui, -apple-system, sans-serif;
   --heading: Georgia, 'Times New Roman', serif;
 
   font: 15px/1.6 var(--sans);
-  color-scheme: light dark;
+  color-scheme: dark;
   color: var(--text);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #aaa;
-    --text-h: #eee;
-    --bg: #0e0e0e;
-    --surface: #161616;
-    --border: #252525;
-    --accent: #ddd;
-    --accent-hover: #fff;
-    --muted: #666;
-    --card-bg: #1a1a1a;
-  }
 }
 
 *,
@@ -64,15 +50,9 @@ img {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(250, 250, 248, 0.92);
+  background: rgba(10, 10, 10, 0.92);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(12px);
-}
-
-@media (prefers-color-scheme: dark) {
-  .site-header {
-    background: rgba(14, 14, 14, 0.92);
-  }
 }
 
 .site-header__inner {
@@ -225,8 +205,8 @@ img {
 }
 
 .filter-btn.active {
-  background: var(--accent);
-  border-color: var(--accent);
+  background: var(--text-h);
+  border-color: var(--text-h);
   color: var(--bg);
 }
 
@@ -264,14 +244,8 @@ img {
 .artwork-card__image-wrap {
   aspect-ratio: 1/1;
   overflow: hidden;
-  background: var(--card-bg);
+  background: #161616;
   border-radius: 2px;
-}
-
-@media (prefers-color-scheme: dark) {
-  .artwork-card__image-wrap {
-    background: #1c1c1c;
-  }
 }
 
 .artwork-card__image-wrap img {
@@ -335,7 +309,7 @@ img {
 }
 
 .artwork-detail__image {
-  background: var(--card-bg);
+  background: #161616;
   border-radius: 2px;
   padding: 24px;
 }
@@ -407,19 +381,20 @@ img {
 .btn-primary {
   display: inline-block;
   padding: 14px 36px;
-  background: var(--accent);
-  color: var(--bg);
-  border: none;
+  background: transparent;
+  color: var(--text-h);
+  border: 1px solid var(--text-h);
   border-radius: 2px;
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.2s;
 }
 
 .btn-primary:hover {
-  background: var(--accent-hover);
+  background: var(--text-h);
+  color: var(--bg);
 }
 
 /* ── Artists grid ── */
@@ -452,12 +427,12 @@ img {
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto 16px;
-  filter: grayscale(100%);
-  transition: filter 0.3s;
+  opacity: 0.85;
+  transition: opacity 0.3s;
 }
 
 .artist-card:hover img {
-  filter: grayscale(0%);
+  opacity: 1;
 }
 
 .artist-card__info h3 {
