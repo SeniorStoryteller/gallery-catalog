@@ -1,15 +1,20 @@
 import { useParams, Link } from 'react-router-dom';
 import artists from '../data/artists.json';
 
-/** Turn superscript markers like ¹ ² ³ into clickable (1) (2) (3) links */
+/** Turn superscript markers like ¹ ² ³ into clickable (1) (2) (3) links.
+ *  Single superscript digits map directly; multi-digit markers like ¹⁰ ¹¹
+ *  are matched as two-character sequences first. */
 function renderWithFootnotes(text, sources) {
-  const superMap = { '\u00B9': 0, '\u00B2': 1, '\u00B3': 2, '\u2074': 3, '\u2075': 4, '\u2076': 5, '\u2077': 6 };
-  const parts = text.split(/([\u00B9\u00B2\u00B3\u2074\u2075\u2076\u2077])/g);
+  const digitVal = { '\u00B9': 1, '\u00B2': 2, '\u00B3': 3, '\u2074': 4, '\u2075': 5, '\u2076': 6, '\u2077': 7, '\u2078': 8, '\u2079': 9, '\u2070': 0 };
+  // Match multi-digit superscript sequences (e.g. ¹⁰, ¹¹) or single digits
+  const superDigit = '[\u00B9\u00B2\u00B3\u2070\u2074-\u2079]';
+  const pattern = new RegExp(`(${superDigit}{2,}|${superDigit})`, 'g');
+  const parts = text.split(pattern);
   return parts.map((part, i) => {
-    if (part in superMap) {
-      const idx = superMap[part];
+    if (part.length > 0 && [...part].every(ch => ch in digitVal)) {
+      const num = [...part].reduce((acc, ch) => acc * 10 + digitVal[ch], 0);
+      const idx = num - 1; // sources array is 0-based
       const source = sources?.[idx];
-      const num = idx + 1;
       if (source?.url) {
         return (
           <a key={i} href={source.url} target="_blank" rel="noopener noreferrer" className="footnote-ref">

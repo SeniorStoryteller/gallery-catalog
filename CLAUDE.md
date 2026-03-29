@@ -41,9 +41,18 @@ Online art gallery catalog for The Orchard Galleries on 25. Current exhibition r
 
 ## Content Notes
 
-- Bella Feldman profile is comprehensive, copy-edited, with 7 numbered sources
-- Profile sources in `artists.json` use `{ label, url }` objects; inline `(N)` footnotes link directly to source URLs (open in new tab)
-- Sources without URLs (physical catalogs, award citations) render as plain text
+### Bella Feldman Profile
+- Comprehensive biographical profile with 12 numbered sources (was 7, expanded March 2026)
+- 9 narrative/list sections: Early Life & Education, Career & Teaching, Artistic Philosophy & Materials, Major Series, Architectural Commissions (new), Legacy (expanded), Selected Exhibitions (24 entries), Awards & Recognition (5), Collections (9)
+- Profile sources in `artists.json` use `{ label, url }` objects; inline superscript footnotes (¹ ² ³ etc.) are parsed by `renderWithFootnotes()` in `ArtistProfile.jsx` and rendered as clickable `(N)` links
+- `renderWithFootnotes()` supports multi-digit superscripts (¹⁰, ¹¹, ¹²) via Unicode digit-value parsing — not limited to single digits
+- Sources without URLs (physical catalogs, award citations, journal articles) render as plain text
+- Key sources: Wikipedia, official CV/website, SculptureSite Gallery, BAWALP, Richmond Art Center catalog, WCA citation, Desta Gallery, Leonardo journal, Selz/Sculpture Magazine, Baker/SF Chronicle, Ollman/LA Times, Cohn/Squarecylinder
+- Uganda dates follow her CV (1972–1975), not Wikipedia (1971–1973)
+- Architectural commissions section sourced entirely from official CV
+- Exhibitions list is reverse-chronological; University Art Museum Berkeley is undated (placed last)
+
+### General
 - Artwork titles are placeholders ("Untitled (descriptive)") — real titles not yet provided
 - Joseph Slusky and African Diaspora content not yet added
 - Hero image: `bella-feldman-hero-image.jpg` (Feldman seated beside monumental sculpture)
