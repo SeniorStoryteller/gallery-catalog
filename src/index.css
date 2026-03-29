@@ -1,12 +1,12 @@
 :root {
-  --text: #a0a0a0;
-  --text-h: #e8e8e8;
+  --text: #c0c0c0;
+  --text-h: #f0f0f0;
   --bg: #0a0a0a;
   --surface: #141414;
   --border: #222;
   --accent: #e0e0e0;
   --accent-hover: #fff;
-  --muted: #666;
+  --muted: #888;
   --card-bg: #141414;
 
   --sans: 'Helvetica Neue', system-ui, -apple-system, sans-serif;
